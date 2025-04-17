@@ -5,6 +5,8 @@
   "summary": "A module for installing and updating the CNI plugins",
   "license": "MIT",
   "source": "https://github.com/avitacco/cni_plugins",
+  "project_page": "https://github.com/avitacco/cni_plugins",
+  "issues_url": "https://github.com/avitacco/cni_plugins/issues",
   "dependencies": [
     {
       "name": "puppetlabs/stdlib",
