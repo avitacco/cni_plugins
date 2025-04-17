@@ -1,0 +1,345 @@
+disks => {
+  nvme0n1 => {
+    model => "ORTIAL SSD",
+    serial => "0000093608",
+    size => "119.24 GiB",
+    size_bytes => 128035676160,
+    type => "ssd",
+    wwn => "nvme.126f-30303030303933363038-4f525449414c20535344-00000001"
+  },
+  nvme1n1 => {
+    model => "Samsung SSD 970 EVO 500GB",
+    serial => "S466NX0K401717L",
+    size => "465.76 GiB",
+    size_bytes => 500107862016,
+    type => "ssd",
+    wwn => "eui.0025385481b40eab"
+  },
+  sda => {
+    model => "ESD-S1C",
+    serial => "M3D0MS001250",
+    size => "465.76 GiB",
+    size_bytes => 500107862016,
+    type => "hdd",
+    vendor => "ROG"
+  }
+}
+dmi => {
+  bios => {
+    release_date => "09/02/2024",
+    vendor => "American Megatrends International, LLC.",
+    version => "F65d"
+  },
+  board => {
+    asset_tag => "Default string",
+    manufacturer => "Gigabyte Technology Co., Ltd.",
+    product => "X470 AORUS ULTRA GAMING-CF"
+  },
+  chassis => {
+    asset_tag => "Default string",
+    type => "Desktop"
+  },
+  manufacturer => "Gigabyte Technology Co., Ltd.",
+  product => {
+    name => "X470 AORUS ULTRA GAMING",
+    version => "Default string"
+  }
+}
+facterversion => 4.10.0
+filesystems => btrfs,ext2,ext3,ext4,vfat,xfs
+fips_enabled => false
+identity => {
+  gid => 60159,
+  group => "anthony",
+  privileged => false,
+  uid => 60159,
+  user => "anthony"
+}
+is_virtual => false
+kernel => Linux
+kernelmajversion => 6.14
+kernelrelease => 6.14.2-arch1-1
+kernelversion => 6.14.2
+load_averages => {
+  15m => 1.94,
+  1m => 1.57,
+  5m => 1.76
+}
+memory => {
+  swap => {
+    available => "8.00 GiB",
+    available_bytes => 8589152256,
+    capacity => "0.01%",
+    total => "8.00 GiB",
+    total_bytes => 8589930496,
+    used => "760.00 KiB",
+    used_bytes => 778240
+  },
+  system => {
+    available => "19.88 GiB",
+    available_bytes => 21346025472,
+    capacity => "36.40%",
+    total => "31.26 GiB",
+    total_bytes => 33563242496,
+    used => "11.38 GiB",
+    used_bytes => 12217217024
+  }
+}
+mountpoints => {
+}
+networking => {
+  dhcp => "192.168.10.1",
+  fqdn => "anthony-desktop",
+  hostname => "anthony-desktop",
+  interfaces => {
+    enp11s0 => {
+      bindings => [
+        {
+          address => "192.168.10.151",
+          netmask => "255.255.255.0",
+          network => "192.168.10.0"
+        }
+      ],
+      bindings6 => [
+        {
+          address => "fe80::9ab7:85ff:fe20:26af",
+          netmask => "ffff:ffff:ffff:ffff::",
+          network => "fe80::",
+          scope6 => "link",
+          flags => [
+            "permanent"
+          ]
+        }
+      ],
+      dhcp => "192.168.10.1",
+      duplex => "full",
+      ip => "192.168.10.151",
+      ip6 => "fe80::9ab7:85ff:fe20:26af",
+      mac => "98:b7:85:20:26:af",
+      mtu => 1500,
+      netmask => "255.255.255.0",
+      netmask6 => "ffff:ffff:ffff:ffff::",
+      network => "192.168.10.0",
+      network6 => "fe80::",
+      operational_state => "up",
+      physical => true,
+      scope6 => "link",
+      speed => 10000
+    },
+    enp7s0 => {
+      duplex => "unknown",
+      mac => "e0:d5:5e:a8:ba:65",
+      mtu => 1500,
+      operational_state => "down",
+      physical => true,
+      speed => -1
+    },
+    lo => {
+      bindings => [
+        {
+          address => "127.0.0.1",
+          netmask => "255.0.0.0",
+          network => "127.0.0.0"
+        }
+      ],
+      bindings6 => [
+        {
+          address => "::1",
+          netmask => "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+          network => "::1",
+          scope6 => "host",
+          flags => [
+            "permanent"
+          ]
+        }
+      ],
+      ip => "127.0.0.1",
+      ip6 => "::1",
+      mtu => 65536,
+      netmask => "255.0.0.0",
+      netmask6 => "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+      network => "127.0.0.0",
+      network6 => "::1",
+      operational_state => "unknown",
+      physical => false,
+      scope6 => "host"
+    },
+    tailscale0 => {
+      bindings => [
+        {
+          address => "100.107.23.80",
+          netmask => "255.255.255.255",
+          network => "100.107.23.80"
+        }
+      ],
+      bindings6 => [
+        {
+          address => "fd7a:115c:a1e0:ab12:4843:cd96:626b:1750",
+          netmask => "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+          network => "fd7a:115c:a1e0:ab12:4843:cd96:626b:1750",
+          scope6 => "global",
+          flags => [
+            "permanent"
+          ]
+        },
+        {
+          address => "fe80::55ad:28f:5c39:4f33",
+          netmask => "ffff:ffff:ffff:ffff::",
+          network => "fe80::",
+          scope6 => "link",
+          flags => [
+            "permanent"
+          ]
+        }
+      ],
+      ip => "100.107.23.80",
+      ip6 => "fd7a:115c:a1e0:ab12:4843:cd96:626b:1750",
+      mtu => 1280,
+      netmask => "255.255.255.255",
+      netmask6 => "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+      network => "100.107.23.80",
+      network6 => "fd7a:115c:a1e0:ab12:4843:cd96:626b:1750",
+      operational_state => "unknown",
+      physical => false,
+      scope6 => "global"
+    }
+  },
+  ip => "192.168.10.151",
+  ip6 => "fe80::9ab7:85ff:fe20:26af",
+  mac => "98:b7:85:20:26:af",
+  mtu => 1500,
+  netmask => "255.255.255.0",
+  netmask6 => "ffff:ffff:ffff:ffff::",
+  network => "192.168.10.0",
+  network6 => "fe80::",
+  primary => "enp11s0",
+  scope6 => "link"
+}
+os => {
+  architecture => "x86_64",
+  distro => {
+    codename => "n/a",
+    description => "Arch Linux",
+    id => "Arch",
+    release => {
+      full => "rolling",
+      major => "rolling",
+      minor => null
+    },
+    specification => "n/a"
+  },
+  family => "Archlinux",
+  hardware => "x86_64",
+  name => "Archlinux",
+  release => {
+    full => "6.14.2-arch1-1",
+    major => "6",
+    minor => "14"
+  },
+  selinux => {
+    enabled => false
+  }
+}
+partitions => {
+  /dev/mapper/MyVolGroup-root => {
+    filesystem => "xfs",
+    size => "457.24 GiB",
+    size_bytes => 490960060416,
+    uuid => "30dd98d0-f65a-439b-95db-b14096568ef5"
+  },
+  /dev/mapper/MyVolGroup-swap => {
+    filesystem => "swap",
+    size => "8.00 GiB",
+    size_bytes => 8589934592,
+    uuid => "e5154ec7-de69-44f9-9542-90eec3c8b476"
+  },
+  /dev/mapper/cryptlvm => {
+    filesystem => "LVM2_member",
+    size => "465.25 GiB",
+    size_bytes => 499553148416,
+    uuid => "gf3Lk4-pfXR-zboD-Kslt-7NCD-fDYx-DLaExP"
+  },
+  /dev/mapper/home-anthony => {
+    filesystem => "xfs",
+    label => "anthony",
+    size => "465.75 GiB",
+    size_bytes => 500090011648,
+    uuid => "6fbd0b0b-dd4e-4632-9fb4-055fd27a32d2"
+  },
+  /dev/nvme0n1p1 => {
+    filesystem => "crypto_LUKS",
+    label => "breaker1",
+    partlabel => "breaker1",
+    parttype => "773f91ef-66d4-49b5-bd83-d683bf40ad16",
+    partuuid => "9f58997f-e957-4bd0-9685-686d47ea67e7",
+    size => "119.24 GiB",
+    size_bytes => 128033226752,
+    uuid => "3ca463cc-68c2-4bce-8adb-b008326e5f5c"
+  },
+  /dev/nvme1n1p1 => {
+    filesystem => "vfat",
+    parttype => "c12a7328-f81f-11d2-ba4b-00a0c93ec93b",
+    partuuid => "6a65ee26-3387-48a5-85d7-610a2b32432f",
+    size => "512.00 MiB",
+    size_bytes => 536870912,
+    uuid => "1AA0-7AE2"
+  },
+  /dev/nvme1n1p2 => {
+    filesystem => "crypto_LUKS",
+    parttype => "ca7d7ccb-63ed-4c53-861c-1742536059cc",
+    partuuid => "324148e4-2a27-4387-bcb7-45e38a6cecca",
+    size => "465.26 GiB",
+    size_bytes => 499569925632,
+    uuid => "16c4bb1d-98b7-4e58-a86b-f94baf56f461"
+  },
+  /dev/sda1 => {
+    filesystem => "crypto_LUKS",
+    label => "anthony",
+    partlabel => "anthony",
+    parttype => "773f91ef-66d4-49b5-bd83-d683bf40ad16",
+    partuuid => "083c500e-6760-431f-8944-3a71acadb9cd",
+    size => "465.76 GiB",
+    size_bytes => 500106788864,
+    uuid => "5fb29599-56dd-4537-ac13-027bc9483b4b"
+  }
+}
+path => /usr/local/bin:/usr/bin:/home/anthony/.local/share/gem/ruby/3.3.0/bin:/usr/sbin:/sbin
+processors => {
+  cores => 6,
+  count => 12,
+  extensions => [
+    "unknown"
+  ],
+  isa => "unknown",
+  models => [
+    "AMD Ryzen 5 2600X Six-Core Processor",
+    "AMD Ryzen 5 2600X Six-Core Processor",
+    "AMD Ryzen 5 2600X Six-Core Processor",
+    "AMD Ryzen 5 2600X Six-Core Processor",
+    "AMD Ryzen 5 2600X Six-Core Processor",
+    "AMD Ryzen 5 2600X Six-Core Processor",
+    "AMD Ryzen 5 2600X Six-Core Processor",
+    "AMD Ryzen 5 2600X Six-Core Processor",
+    "AMD Ryzen 5 2600X Six-Core Processor",
+    "AMD Ryzen 5 2600X Six-Core Processor",
+    "AMD Ryzen 5 2600X Six-Core Processor",
+    "AMD Ryzen 5 2600X Six-Core Processor"
+  ],
+  physicalcount => 1,
+  speed => "4.10 GHz",
+  threads => 2
+}
+puppetversion => 8.10.0
+ruby => {
+  platform => "x86_64-linux",
+  sitedir => "/usr/lib/ruby/site_ruby/3.3.0",
+  version => "3.3.7"
+}
+system_uptime => {
+  days => 0,
+  hours => 3,
+  seconds => 12959,
+  uptime => "3:35 hours"
+}
+timezone => EDT
+virtual => physical
