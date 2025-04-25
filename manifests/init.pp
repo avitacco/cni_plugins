@@ -4,7 +4,7 @@
 # archives.
 #
 # @param version
-#   The version of the CNI plugins to install (default: 1.6.2)
+#   The version of the CNI plugins to install (default: 1.7.1)
 #
 # @param install_root
 #   The root into which the cni plugins should be installed (default: /opt/cni)
@@ -21,7 +21,7 @@
 # @example
 #   include cni_plugins
 class cni_plugins (
-  String               $version = '1.6.2',
+  String               $version = '1.7.1',
   Stdlib::Absolutepath $install_root = '/opt/cni',
   Stdlib::Filemode     $install_root_mode = '0755',
   String               $install_root_owner = 'root',

@@ -37,9 +37,9 @@ The following parameters are available in the `cni_plugins` class:
 
 Data type: `String`
 
-The version of the CNI plugins to install (default: 1.6.2)
+The version of the CNI plugins to install (default: 1.7.1)
 
-Default value: `'1.6.2'`
+Default value: `'1.7.1'`
 
 ##### <a name="-cni_plugins--install_root"></a>`install_root`
 
