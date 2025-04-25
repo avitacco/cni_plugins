@@ -1,6 +1,6 @@
 {
   "name": "avitacco-cni_plugins",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Anthony Vitacco",
   "summary": "A module for installing and updating the CNI plugins",
   "license": "MIT",
