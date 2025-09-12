@@ -3,7 +3,7 @@
 require 'spec_helper'
 
 describe 'cni_plugins' do
-  let(:version) { '1.7.1' }
+  let(:version) { '1.8.0' }
 
   on_supported_os.each do |os, os_facts|
     context "on #{os}" do

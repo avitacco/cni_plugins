@@ -4,7 +4,7 @@ require 'spec_helper_acceptance'
 
 describe 'init class' do
   context 'applying graylog server class works' do
-    let(:version) { '1.7.1' }
+    let(:version) { '1.8.0' }
 
     let(:pp) do
       <<-CODE

@@ -21,7 +21,7 @@
 # @example
 #   include cni_plugins
 class cni_plugins (
-  String               $version = '1.7.1',
+  String               $version = '1.8.0',
   Stdlib::Absolutepath $install_root = '/opt/cni',
   Stdlib::Filemode     $install_root_mode = '0755',
   String               $install_root_owner = 'root',
